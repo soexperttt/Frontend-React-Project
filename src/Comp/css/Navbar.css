@@ -1,0 +1,33 @@
+* {
+  /* transition: 0.6s ease; */
+
+
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.right{
+
+}
+.left{
+    display: flex;
+
+
+}
+.navbar {
+  
+  background-color: rgb(255, 255, 255);
+}
+.navbar-brand {
+    
+  color: black;
+}
+.navbar-brand:hover {
+  color: inherit;
+}
+.navbar-brand :active,
+.navbar-brand:focus {
+  color: rgb(164, 38, 38);
+}

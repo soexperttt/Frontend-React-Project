@@ -1,0 +1,37 @@
+.recipeList-main {
+  padding: 10px 10px;
+  margin: 10px 10px;
+  
+}
+.content {
+  border: 1px solid black;
+  padding: 10px 10px;
+  transition: 0.8s ease;
+  min-height: 40vh;
+}
+.content:hover {
+  transition: 0.5s ease;
+
+  border: 1px solid rgba(0, 0, 0, 0);
+  transform: scale(1.1);
+}
+.recipeList-image {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  border-radius: 0px;
+}
+.recipeList-p {
+    word-break: break-all;
+    word-wrap:break-word;
+
+  width: 100%;
+  text-align: left;
+  margin: 5px 20px;
+  /* padding: 10px 0px 20px 0px; */
+}
+.btn {
+  margin: 20px 0px;
+  width: 76%;
+  border-radius: 0px;
+}

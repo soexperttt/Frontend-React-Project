@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(219, 215, 207, 1) 100%
+  );
+}
+
+.home {
+  padding: 100px 0px;
+  height: 100%;
+  width: 100%;
+}
+.head {
+  letter-spacing: 5px;
+  font-size: 2em;
+  font-weight: 700;
+}
+.search-input {
+  margin: 0px 0px;
+  width: 50%;
+  padding: 10px 10px;
+}
+.searchBtn {
+  padding: 10px 0px;
+  margin: 10px 0px;
+  width: 50%;
+  background-color: rgb(215, 17, 7);
+  outline: none !important;
+  border: 0px !important;
+}
+.form-select {
+  width: 50%;
+}
+span {
+  color: rgb(255, 0, 0);
+}
+.RecipesList {
+  display: grid;
+  grid-template-columns: 330px 330px 330px;
+  align-items: baseline;
+}
