@@ -1,4 +1,4 @@
-import "../css/RecipeList.css";
+import "../css/Recipe.css";
 import React from "react";
 import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
@@ -6,7 +6,6 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Button from "@mui/material/Button";
-
 
 const RecipeList = ({ recipe }) => {
   const [open, setOpen] = React.useState(false);
@@ -23,36 +22,33 @@ const RecipeList = ({ recipe }) => {
 
   return (
     <>
-      <div className="recipeList-main">
-        <div className="content">
-          <img
-            className="recipeList-image"
-            src={recipe["recipe"]["image"]}
-            alt={recipe["recipe"]["label"]}
-          />
-          <button
-            onClick={showIngredients}
-            type="button"
-            className="btn btn-success "
-          >
-            Show Recipe
-          </button>
-          <p className="recipeList-p">{recipe["recipe"]["label"]}</p>
-          <p className="recipeList-p">
-            meal Type: {recipe["recipe"]["mealType"]}
-          </p>
-          <p className="recipeList-p">
-            calories: {recipe["recipe"]["calories"]}
-          </p>
-          <p className="recipeList-p">
-            dishType: {recipe["recipe"]["dishType"]}
-          </p>
-          <Dialog
-            open={open}
-            onClose={handleClose}
-            aria-labelledby="alert-dialog-title"
-            aria-describedby="alert-dialog-description"
-          >
+      <div className="recipeList-main-recipe">
+        <div className="content-recipe">
+          <div className="card">
+            <img
+              className="recipeList-image-recipe"
+              src={recipe["recipe"]["image"]}
+              alt={recipe["recipe"]["label"]}
+            />
+            <button
+              className="button-87"
+              role="button"
+              onClick={showIngredients}
+              type="button"
+            >
+              Show Recipe
+            </button>
+
+            <p className="recipeList-p-recipe">{recipe["recipe"]["label"]}</p>
+            <p className="recipeList-p-recipe">
+              meal Type: {recipe["recipe"]["mealType"]}
+            </p>
+
+            <p className="recipeList-p-recipe">
+              dish Type: {recipe["recipe"]["dishType"]}
+            </p>
+          </div>
+          <Dialog className="dialog-recipe" open={open} onClose={handleClose}>
             <DialogTitle id="alert-dialog-title">
               {"The ingredients of the recipe: "}
             </DialogTitle>

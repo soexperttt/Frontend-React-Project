@@ -1,11 +1,11 @@
 import ".//Comp/css/App.css";
 import NavBar from "./Comp/JS/NavBar";
-import Contact from "./Comp/JS/Contact";
 import About from "./Comp/JS/About";
 import Recipe from "./Comp/JS/Recipe";
 import Welcome from "./Comp/JS/Welcome";
 import NotFound from "./Comp/JS/NotFound";
 import Food from "./Comp/JS/Food";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
@@ -16,7 +16,9 @@ function App() {
   };
 
   return (
+
     <>
+
       <Router>
         <NavBar firstTime={firstTime} />
         <div className="App">
@@ -25,7 +27,6 @@ function App() {
             <Route path="/recipe" element={<Recipe />} />
             <Route path="/food" element={<Food />} />
             <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

@@ -9,11 +9,3 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-.welcome {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}

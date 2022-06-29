@@ -1,0 +1,224 @@
+.button-82-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-82-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.button-82-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(
+    to left,
+    /* hsl(340deg 100% 16%) 0%,
+    hsl(340deg 100% 32%) 8%,
+    hsl(340deg 100% 32%) 92%,
+    hsl(340deg 100% 16%) 100% */
+      hsl(179deg, 100%, 16%) 0%,
+    hsl(179deg, 100%, 87%) 8%,
+    hsl(179deg, 100%, 87%) 92%,
+    hsl(179deg, 100%, 16%) 100%
+  );
+}
+
+.button-82-front {
+  display: block;
+  font-weight: 300;
+
+  position: relative;
+  padding: 8px 15px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: rgb(2, 209, 209);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.button-82-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.RecipesList-food {
+  text-align: center;
+
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 330px 330px 330px;
+  align-items: baseline;
+}
+.container-food {
+  display: flex;
+  flex-direction: column;
+  padding: 150px 0px;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-image: url("2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+
+  height: 100%;
+}
+.content-food {
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.comp-food {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 0px;
+
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.head-food {
+  letter-spacing: 10px;
+  font-size: 5em;
+  font-weight: 900;
+  background: rgb(161, 0, 241);
+  background: linear-gradient(
+    90deg,
+    rgba(161, 0, 241, 1) 0%,
+    rgba(0, 255, 192, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.search-input-food {
+  width: 20%;
+  padding: 10px 20px;
+  margin: 0px 20px;
+  outline: none;
+  transition: 1s ease;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(3, 28, 30, 0.764);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+.search-input-food:focus {
+  outline: none;
+  transition: 1s ease;
+  width: 30%;
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+
+  background-color: rgba(0, 194, 204, 0.391);
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.search-p-food {
+  color: rgb(255, 255, 255);
+  font-size: 1.6em;
+  font-weight: 800;
+  background: rgb(217, 2, 2);
+  background: linear-gradient(
+    90deg,
+    rgba(161, 0, 241, 1) 0%,
+    rgba(0, 255, 192, 1) 100%
+  );
+  padding: 0px 10px;
+  width: 50%;
+  border-radius: 30px;
+}
+.recipeList-image-food {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px 30px 0px 0px;
+}
+.card {
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 204, 255, 0.127);
+  border: #000000 solid 2px;
+  border-radius: 30px 30px 30px 30px;
+  transition: 1s ease;
+  margin: 0px 10px;
+
+  opacity: 1;
+}
+.card:hover {
+  backdrop-filter: blur(0px);
+  background-color: rgba(255, 132, 0, 0.127);
+  border: #00000000 solid 2px;
+  transform: scale(1.07);
+  /* transform: translateY(-10px); */
+  background-color: rgba(49, 49, 49, 0.445);
+  color: white;
+  box-shadow: -10px -10px 25px #00000078, 10px 10px 25px #00000073;
+}
+#alert-dialog-description {
+  color: rgb(0, 0, 0);
+}
+.dialog-recipe {
+  backdrop-filter: blur(2px);
+  background-color: rgba(109, 109, 109, 0.445);
+}
+.recipeList-p-food {
+  font-weight: 700;
+  padding: 10px;
+  margin: 5px;
+}

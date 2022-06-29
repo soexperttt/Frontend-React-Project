@@ -10,19 +10,13 @@ const NavBar = ({firstTime}) => {
     { !firstTime &&
       <nav className="navbar fixed-top ">
         <div className="container">
-          <div className="left">
-          <NavLink className="navbar-brand" to="/home">
-            Home
-          </NavLink></div>
+          <NavLink className="navbar-brand" to="/">
+          home
+          </NavLink>
           <NavLink className="navbar-brand" to="/about">
-            About
+            About & Contact
           </NavLink>
-          <div className="right">
-
-          <NavLink className="navbar-brand" to="/contact">
-            Contact
-          </NavLink>
-        </div></div>
+      </div>
       </nav>
 }
     </>

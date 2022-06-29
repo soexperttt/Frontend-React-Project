@@ -1,9 +1,9 @@
-import "../css/Home.css";
+import "../css/Recipe.css";
 import Axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
 import RecipeList from "./RecipeList";
-const Home = ({ingredients}) => {
+const Home = ({ ingredients }) => {
   const [recipes, setRecipe] = useState("");
   const [showRecipes, setShowRecipes] = useState([]);
   const [search, setSearch] = useState("");
@@ -22,57 +22,29 @@ const Home = ({ingredients}) => {
     e.preventDefault();
     getRecipes();
     console.log("You searched for: " + recipes);
-    setSearch("Result of your search for: " + recipes);
+    setSearch("Result of ( " + recipes + " )");
   };
 
   return (
-    <div className="home">
-      <h1 className="head">Food Recipe </h1>
-      <input
-        type="text"
-        className="search-input"
-        placeholder="Recipe... chicken, rice, etc"
-        value={recipes}
-        onChange={(e) => setRecipe(e.target.value)}
-      />
-      <button type="button" onClick={onClick} className="searchBtn">
-        SEARCH
-      </button>
+    <div className="container-recipe">
+      <div className="topBG">
+      <h1 className="head-recipe">Food & Grocery </h1>
+      <div className="comp-recipe">
+        <input
+          type="text"
+          className="search-input-recipe"
+          placeholder="Recipe..."
+          value={recipes}
+          onChange={(e) => setRecipe(e.target.value)}
+        />
 
-      <select className="form-select form-select-lg">
-        <option defaultValue>Type...</option>
+        <button className="button-86" onClick={onClick} role="button">
+          search
+        </button>
+      </div></div>
 
-        <option onClick={() => SetOptions("vegan")}>Vegan</option>
-        <option onClick={() => SetOptions("vegetarian")}>Vegetarian</option>
-        <option onClick={() => SetOptions("wheat-free")}>Wheat-Free</option>
-        <option onClick={() => SetOptions("celery-free")}>Celery-Free</option>
-        <option onClick={() => SetOptions("dairy-free")}>Dairy-Free</option>
-        <option onClick={() => SetOptions("DASH")}>DASH</option>
-        <option onClick={() => SetOptions("egg-free")}>Egg-Free</option>
-        <option onClick={() => SetOptions("fish-free")}>Fish-Free</option>
-        <option onClick={() => SetOptions("gluten-free")}>Gluten-Free</option>
-        <option onClick={() => SetOptions("keto-friendly")}>
-          Keto Friendly
-        </option>
-        <option onClick={() => SetOptions("low-sugar")}>Low Sugar</option>
-        <option onClick={() => SetOptions("Mediterranean")}>
-          Mediterranean
-        </option>
-        <option onClick={() => SetOptions("mustard-free")}>Mustard-Free</option>
-        <option onClick={() => SetOptions("no-oil-added")}>No Oil-added</option>
-        <option onClick={() => SetOptions("peanut-free")}>Peanut-Free</option>
-        <option onClick={() => SetOptions("red-meat-free")}>
-          Red Meat-Free
-        </option>
-        <option onClick={() => SetOptions("sesame-free")}>Sesame-Free</option>
-        <option onClick={() => SetOptions("soy-free")}>Soy-Free</option>
-        <option onClick={() => SetOptions("tree-nut-free")}>
-          Tree nut-Free
-        </option>
-      </select>
-
-      <p>{search}</p>
-      <div className="RecipesList">
+      <p className="search-p-recipe">{search}</p>
+      <div className="RecipesList-recipe">
         {showRecipes.map((recipe) => {
           return <RecipeList recipe={recipe} />;
         })}
