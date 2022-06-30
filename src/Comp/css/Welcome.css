@@ -24,6 +24,11 @@
     background-color: rgba(0, 0, 0, 0.348);
     box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px;
     border: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
 }
 video {
@@ -46,6 +51,7 @@ video {
   align-items: center;
   text-align: center;
   width: 100%;
+  padding:10px;
 }
 .button-64 {
   align-items: center;

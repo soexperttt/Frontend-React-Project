@@ -28,20 +28,21 @@ const Home = ({ ingredients }) => {
   return (
     <div className="container-recipe">
       <div className="topBG">
-      <h1 className="head-recipe">Food & Grocery </h1>
-      <div className="comp-recipe">
-        <input
-          type="text"
-          className="search-input-recipe"
-          placeholder="Recipe..."
-          value={recipes}
-          onChange={(e) => setRecipe(e.target.value)}
-        />
+        <h1 className="head-recipe">Food & Grocery </h1>
+        <div className="comp-recipe">
+          <input
+            type="text"
+            className="search-input-recipe"
+            placeholder="Recipe..."
+            value={recipes}
+            onChange={(e) => setRecipe(e.target.value)}
+          />
 
-        <button className="button-86" onClick={onClick} role="button">
-          search
-        </button>
-      </div></div>
+          <button className="button-86" onClick={onClick} role="button">
+            search
+          </button>
+        </div>
+      </div>
 
       <p className="search-p-recipe">{search}</p>
       <div className="RecipesList-recipe">

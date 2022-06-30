@@ -5,7 +5,7 @@ import Recipe from "./Comp/JS/Recipe";
 import Welcome from "./Comp/JS/Welcome";
 import NotFound from "./Comp/JS/NotFound";
 import Food from "./Comp/JS/Food";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+// import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
