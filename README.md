@@ -2,7 +2,7 @@ FrontEnd Project
 React APP
 
 
-Deployt(Video background wont work in deploy):
+Deploy(Video background wont work in deploy):
 
 
 https://food-recipe-database-react.netlify.app/
