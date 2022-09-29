@@ -5,13 +5,16 @@ React APP
 Deploy(Video background wont work in deploy):
 
 
-https://food-recipe-database-react.netlify.app/
+https://foodapp-faisal.netlify.app/
 
 
-https://food-recipe-database-react.netlify.app/
+https://foodapp-faisal.netlify.app/
 
 
-https://food-recipe-database-react.netlify.app/
+https://foodapp-faisal.netlify.app/
+
+
+
 
 used 2 api axios: for food and food recipe
 
